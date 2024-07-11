@@ -67,7 +67,7 @@ const tableHead = ref([
               <td>01.02.2024 09:30 (МСК)</td>
               <td>Завершено</td>
               <td>3 843 378, 00 руб</td>
-              <td class="text-center">
+              <td>
                 <img src="public/images/pdf.svg" alt="Doc" />
                 <img src="public/images/pdf.svg" alt="Doc" />
                 <img src="public/images/pdf.svg" alt="Doc" />
@@ -87,13 +87,13 @@ const tableHead = ref([
               <td>01.02.2024 09:30 (МСК)</td>
               <td>Завершено</td>
               <td>3 843 378, 00 руб</td>
-              <td class="documentation">
+              <td>
                 <img src="public/images/pdf.svg" alt="Doc" />
                 <img src="public/images/pdf.svg" alt="Doc" />
                 <img src="public/images/pdf.svg" alt="Doc" />
                 <img src="public/images/pdf.svg" alt="Doc" />
               </td>
-              <td class="documentation">
+              <td>
                 <img src="public/images/zip.svg" alt="Doc" />
               </td>
             </tr>
@@ -107,13 +107,13 @@ const tableHead = ref([
               <td>01.02.2024 09:30 (МСК)</td>
               <td>Завершено</td>
               <td>3 843 378, 00 руб</td>
-              <td class="documentation">
+              <td>
                 <img src="public/images/pdf.svg" alt="Doc" />
                 <img src="public/images/pdf.svg" alt="Doc" />
                 <img src="public/images/pdf.svg" alt="Doc" />
                 <img src="public/images/pdf.svg" alt="Doc" />
               </td>
-              <td class="documentation">
+              <td>
                 <img src="public/images/zip.svg" alt="Doc" />
               </td>
             </tr>
