@@ -30,7 +30,7 @@ const vacancies = [
 
 <template>
   <div class="relative">
-    <header-component />
+    <header-component class="mb-6 sm:mb-24" />
     <img src="public/images/background.svg" class="absolute object-none top-0 sm:hidden" />
 
     <section class="px-4 sm:px-0 mb-16 sm:mb-28 flex flex-col">
