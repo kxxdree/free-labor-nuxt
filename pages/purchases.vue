@@ -38,7 +38,7 @@ const tableHead = ref([
 <template>
   <div class="h-screen flex flex-col content">
     <header-component />
-    <main class="py-16 px-24">
+    <main class="py-16 px-24" id="purchases">
       <section class="flex flex-col gap-4 mb-8">
         <p class="text-[#5f42c3] font-normal text-xl leading-[1.4]">Обновлено 10 июля 2024 года</p>
         <h2 class="font-medium text-[4rem] leading-[1.25]">Информация о закупках</h2>

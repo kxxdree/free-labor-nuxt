@@ -54,15 +54,17 @@ const copyPhone = () => {
 
     <section class="px-4 sm:px-0 mb-16 sm:mb-28 flex flex-col">
       <div class="sm:max-w-[49.375rem] m-auto mb-10 sm:mb-24">
-        <div
-          class="flex justify-center gap-1 items-center max-w-fit ml-0 sm:m-auto mb-4 sm:mb-8 bg-[#f3f0ff] text-[#5f42c3] border border-[#1911350f] rounded-2xl cursor-pointer title-content__links relative"
-        >
-          <p class="text-xs sm:text-sm leading-[1.5] py-0.5 px-2 rounded-2xl bg-white">Собираем команду</p>
-          <div class="text-xs sm:text-sm leading-[1.5] py-0.5 px-2 rounded-2xl flex items-center gap-1.5">
-            <p>Присоединяйтесь к нам</p>
-            <img src="public/images/join-link.svg" alt="Join" />
+        <a href="#vacancies">
+          <div
+            class="flex justify-center gap-1 items-center max-w-fit ml-0 sm:m-auto mb-4 sm:mb-8 bg-[#f3f0ff] text-[#5f42c3] border border-[#1911350f] rounded-2xl cursor-pointer title-content__links relative"
+          >
+            <p class="text-xs sm:text-sm leading-[1.5] py-0.5 px-2 rounded-2xl bg-white">Собираем команду</p>
+            <div class="text-xs sm:text-sm leading-[1.5] py-0.5 px-2 rounded-2xl flex items-center gap-1.5">
+              <p>Присоединяйтесь к нам</p>
+              <img src="public/images/join-link.svg" alt="Join" />
+            </div>
           </div>
-        </div>
+        </a>
         <h1 class="text-start sm:text-center font-medium text-4xl sm:text-[4rem] leading-[1.25] mb-3 sm:mb-12">
           Растим <span class="text-[#5f42c3]">кадры</span> в области информационных технологий
         </h1>
