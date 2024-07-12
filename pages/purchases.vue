@@ -36,7 +36,7 @@ const tableHead = ref([
 </script>
 
 <template>
-  <div>
+  <div class="h-screen flex flex-col">
     <header-component />
     <main class="py-16 px-24">
       <section class="flex flex-col gap-4 mb-8">
@@ -121,7 +121,7 @@ const tableHead = ref([
         </table>
       </section>
     </main>
-    <footer-component />
+    <footer-component class="mt-auto" />
   </div>
 </template>
 
