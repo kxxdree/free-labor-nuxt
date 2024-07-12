@@ -4,7 +4,7 @@
       <img src="public/images/footer-logo.svg" alt="Logo" class="max-h-14 mb-10 sm:mb-0" />
     </nuxt-link>
     <nav
-      class="flex flex-col flex-wrap w-4/5 sm:w-full sm:justify-end max-h-48 sm:flex sm:flex-row gap-8 text-[#191135] no-underline leading-[1.5] font-extralight"
+      class="flex flex-col flex-wrap w-4/5 sm:w-full sm:justify-end max-h-48 sm:flex sm:flex-row gap-8 text-[#191135] text-base no-underline leading-[1.5] font-light"
     >
       <a href="https://orpo.tech/" target="_blank">Проекты</a>
       <a href="/#mission">Цели</a>
