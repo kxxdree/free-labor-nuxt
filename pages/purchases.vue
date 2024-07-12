@@ -33,7 +33,7 @@
               <td>01.02.2024 09:30 (МСК)</td>
               <td>Завершено</td>
               <td>3 843 378, 00 руб</td>
-              <td>
+              <td class="documentation">
                 <img src="public/images/pdf.svg" alt="Doc" class="doc-img" />
                 <img src="public/images/pdf.svg" alt="Doc" class="doc-img" />
                 <img src="public/images/pdf.svg" alt="Doc" class="doc-img" />
@@ -80,5 +80,9 @@
 
 .doc-img {
   width: 2.5rem;
+}
+
+.documentation {
+  text-align: center !important;
 }
 </style>

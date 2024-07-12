@@ -72,3 +72,8 @@ html {
 ul {
   list-style-type: none;
 }
+
+.link:hover {
+  color: #5f42c3;
+  transition: ease-in-out 0.2s;
+}

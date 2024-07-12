@@ -38,13 +38,13 @@ const copyEmail = () => {
   }, 3000);
 };
 
-const copyPhone = () => {
-  navigator.clipboard.writeText(phoneNumber.value);
-  phoneNumber.value = "Скопировано";
-  setTimeout(() => {
-    phoneNumber.value = "+7 (900) 600 10 42";
-  }, 3000);
-};
+// const copyPhone = () => {
+//   navigator.clipboard.writeText(phoneNumber.value);
+//   phoneNumber.value = "Скопировано";
+//   setTimeout(() => {
+//     phoneNumber.value = "+7 (900) 600 10 42";
+//   }, 3000);
+// };
 </script>
 
 <template>
@@ -123,7 +123,7 @@ const copyPhone = () => {
               <p class="font-extralight text-base leading-[1.25]">{{ vacancy.stackDescription }}</p>
             </div>
             <ul class="flex flex-col sm:w-[48rem] gap-4">
-              <li class="flex flex-col gap-8 border border-[#1911351a] rounded-[1.25rem] p-6">
+              <li class="flex flex-col gap-8 border border-[#1911351a] rounded-[1.25rem] p-6 vacancy-item">
                 <h3 class="font-extralight text-xl leading-[1.4]">{{ vacancy.vacancyName }}</h3>
                 <ul class="py-0 px-8 list-disc">
                   <li class="font-extralight text-base leading-[1.25] text-[#191135cc]" v-for="item in vacancy.vacancyRequirements" :key="item">{{ item }}</li>
@@ -167,7 +167,7 @@ const copyPhone = () => {
           <li class="flex flex-col sm:w-[24rem]">
             <img class="w-10 sm:w-16 mb-4 sm:mb-8" src="public/images/call-logo.svg" alt="Meet" />
             <h3 class="font-normal text-[1.625rem] leading-[1.2] sm:mb-2">Ждём звонка</h3>
-            <p class="font-light text-xl leading-[1.5] text-[#5f42c3] cursor-pointer contacts-phone" @click="copyPhone">{{ phoneNumber }}</p>
+            <p class="font-light text-xl leading-[1.5] text-[#5f42c3] cursor-pointer contacts-phone">{{ phoneNumber }}</p>
           </li>
         </ul>
       </section>
@@ -230,6 +230,15 @@ const copyPhone = () => {
 .mission-logo {
   @media (max-width: 480px) {
     height: 20rem;
+  }
+}
+
+.vacancy-item:hover {
+  cursor: pointer;
+
+  h3 {
+    color: #5f42c3;
+    transition: ease-in-out 0.2s;
   }
 }
 </style>
