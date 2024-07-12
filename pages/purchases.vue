@@ -1,39 +1,4 @@
-<script setup>
-const tableHead = ref([
-  {
-    title: "Наименование закупки",
-    style: "w-[18.75rem]",
-  },
-  {
-    title: "Номер закупки",
-    style: "w-[7.5rem]",
-  },
-  {
-    title: "Дата начала подачи заявок",
-    style: "w-[7.5rem]",
-  },
-  {
-    title: "Дата окончания подачи заявок",
-    style: "w-[7.5rem]",
-  },
-  {
-    title: "Текущий статус",
-    style: "w-[8.125rem]",
-  },
-  {
-    title: "Начальная (максимальная) цена договора",
-    style: "w-[11.25rem]",
-  },
-  {
-    title: "Документация",
-    style: "w-[8.7rem]",
-  },
-  {
-    title: "Извещения/Протоколы заседания комиссии",
-    style: "w-[8.7rem]",
-  },
-]);
-</script>
+<script setup></script>
 
 <template>
   <div class="h-screen flex flex-col content">
@@ -47,13 +12,14 @@ const tableHead = ref([
         <table class="border-spacing-0 w-full table">
           <thead class="bg-[#f3f0ff]">
             <tr>
-              <th
-                v-for="title in tableHead"
-                :key="title"
-                :class="[title.style, 'py-2', 'px-4', 'font-light', 'text-[0.875rem]', 'leading-[1.4]', 'text-start']"
-              >
-                {{ title.title }}
-              </th>
+              <th class="text-start w-[18.75rem] rounded-l-2xl">Наименование закупки</th>
+              <th class="text-start w-[7.5rem]">Номер закупки</th>
+              <th class="text-start w-[7.5rem]">Дата начала подачи заявок</th>
+              <th class="text-start w-[7.5rem]">Дата окончания подачи заявок</th>
+              <th class="text-start w-[8.125rem]">Текущий статус</th>
+              <th class="text-start w-[11.25rem]">Начальная (максимальная) цена договора</th>
+              <th class="text-center w-[8.7rem]">Документация</th>
+              <th class="text-center w-[8.7rem] rounded-r-2xl">Извещения/Протоколы заседания комиссии</th>
             </tr>
           </thead>
           <tbody>
@@ -68,53 +34,16 @@ const tableHead = ref([
               <td>Завершено</td>
               <td>3 843 378, 00 руб</td>
               <td>
-                <img src="public/images/pdf.svg" alt="Doc" />
-                <img src="public/images/pdf.svg" alt="Doc" />
-                <img src="public/images/pdf.svg" alt="Doc" />
-                <img src="public/images/pdf.svg" alt="Doc" />
-              </td>
-              <td class="text-center">
-                <img src="public/images/zip.svg" alt="Doc" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Запрос цен на оказание автотранспортных услуг для нужд Филиала автономной некоммерческой организации «Дирекция по информационно-аналитическому
-                сопровождению государственной программы Российской Федерации „Социально-экономическое развитие Республики Крым и г. Севастополя“ (г. Москва)»
-              </td>
-              <td>01-02-10/6</td>
-              <td>24.01.2024 09:00 (МСК)</td>
-              <td>01.02.2024 09:30 (МСК)</td>
-              <td>Завершено</td>
-              <td>3 843 378, 00 руб</td>
-              <td>
-                <img src="public/images/pdf.svg" alt="Doc" />
-                <img src="public/images/pdf.svg" alt="Doc" />
-                <img src="public/images/pdf.svg" alt="Doc" />
-                <img src="public/images/pdf.svg" alt="Doc" />
+                <img src="public/images/pdf.svg" alt="Doc" class="doc-img" />
+                <img src="public/images/pdf.svg" alt="Doc" class="doc-img" />
+                <img src="public/images/pdf.svg" alt="Doc" class="doc-img" />
+                <img src="public/images/pdf.svg" alt="Doc" class="doc-img" />
               </td>
               <td>
-                <img src="public/images/zip.svg" alt="Doc" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Запрос цен на оказание автотранспортных услуг для нужд Филиала автономной некоммерческой организации «Дирекция по информационно-аналитическому
-                сопровождению государственной программы Российской Федерации „Социально-экономическое развитие Республики Крым и г. Севастополя“ (г. Москва)»
-              </td>
-              <td>01-02-10/6</td>
-              <td>24.01.2024 09:00 (МСК)</td>
-              <td>01.02.2024 09:30 (МСК)</td>
-              <td>Завершено</td>
-              <td>3 843 378, 00 руб</td>
-              <td>
-                <img src="public/images/pdf.svg" alt="Doc" />
-                <img src="public/images/pdf.svg" alt="Doc" />
-                <img src="public/images/pdf.svg" alt="Doc" />
-                <img src="public/images/pdf.svg" alt="Doc" />
-              </td>
-              <td>
-                <img src="public/images/zip.svg" alt="Doc" />
+                <img src="public/images/zip.svg" alt="Doc" class="doc-img" />
+                <img src="public/images/zip.svg" alt="Doc" class="doc-img" />
+                <img src="public/images/zip.svg" alt="Doc" class="doc-img" />
+                <img src="public/images/zip.svg" alt="Doc" class="doc-img" />
               </td>
             </tr>
           </tbody>
@@ -132,6 +61,17 @@ const tableHead = ref([
   }
 }
 
+.table thead tr th {
+  padding: 0.5rem 1rem;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #1911350f;
+}
+
 .table tbody tr td {
   padding: 1rem;
   font-weight: 300;
@@ -139,6 +79,9 @@ const tableHead = ref([
   line-height: 1.4;
   text-align: start;
   vertical-align: top;
-  border-bottom: 1px solid #1911350f;
+}
+
+.doc-img {
+  width: 2.5rem;
 }
 </style>
