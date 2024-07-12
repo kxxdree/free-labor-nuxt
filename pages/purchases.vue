@@ -9,7 +9,7 @@
         <h2 class="font-medium text-[4rem] leading-[1.25]">Информация о закупках</h2>
       </section>
       <section>
-        <table class="border-spacing-0 w-full table">
+        <table class="border-spacing-0 w-full table-container">
           <thead class="bg-[#f3f0ff]">
             <tr>
               <th class="text-start w-[18.75rem] rounded-l-2xl">Наименование закупки</th>
@@ -41,9 +41,6 @@
               </td>
               <td>
                 <img src="public/images/zip.svg" alt="Doc" class="doc-img" />
-                <img src="public/images/zip.svg" alt="Doc" class="doc-img" />
-                <img src="public/images/zip.svg" alt="Doc" class="doc-img" />
-                <img src="public/images/zip.svg" alt="Doc" class="doc-img" />
               </td>
             </tr>
           </tbody>
@@ -61,18 +58,18 @@
   }
 }
 
-.table thead tr th {
+.table-container thead tr th {
   padding: 0.5rem 1rem;
   font-weight: 300;
   font-size: 0.875rem;
   line-height: 1.4;
 }
 
-.table tbody tr {
+.table-container tbody tr {
   border-bottom: 1px solid #1911350f;
 }
 
-.table tbody tr td {
+.table-container tbody tr td {
   padding: 1rem;
   font-weight: 300;
   font-size: 0.875rem;
