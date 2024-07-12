@@ -130,7 +130,7 @@ const copyPhone = () => {
                 </ul>
                 <a href="https://t.me/okovale" target="_blank" style="text-decoration: none">
                   <div
-                    class="title-content__links flex justify-center gap-1 items-center max-w-fit mb-1 sm:mb-8 bg-[#27a6e51a] text-[#5f42c3] border border-[#1911350f] rounded-2xl cursor-pointer m-0"
+                    class="title-content__links flex justify-center gap-1 items-center max-w-fit mb-1 sm:mb-0 bg-[#27a6e51a] text-[#5f42c3] border border-[#1911350f] rounded-2xl cursor-pointer m-0"
                   >
                     <p class="text-sm leading-[1.5] py-0.5 px-2 rounded-2xl bg-white text-[#0988c7]">Telegram</p>
                     <div class="text-sm leading-[1.5] py-0.5 px-2 rounded-2xl flex items-center gap-1.5">
