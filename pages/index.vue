@@ -48,7 +48,7 @@ const copyPhone = () => {
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative content">
     <header-component class="mb-6 sm:mb-24" />
     <img src="public/images/background.svg" class="absolute object-none top-0 sm:hidden" />
 
@@ -175,6 +175,14 @@ const copyPhone = () => {
 </template>
 
 <style lang="scss" scoped>
+@media (min-width: 640px) {
+  .content {
+    background-image: url("public/images/background.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
 .separator {
   border: 1px solid #1911351a;
   margin: 6rem 0;

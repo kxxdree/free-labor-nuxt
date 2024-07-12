@@ -36,7 +36,7 @@ const tableHead = ref([
 </script>
 
 <template>
-  <div class="h-screen flex flex-col">
+  <div class="h-screen flex flex-col content">
     <header-component />
     <main class="py-16 px-24">
       <section class="flex flex-col gap-4 mb-8">
@@ -126,6 +126,12 @@ const tableHead = ref([
 </template>
 
 <style lang="scss" scoped>
+@media (min-width: 640px) {
+  .content {
+    background-image: none;
+  }
+}
+
 .table tbody tr td {
   padding: 1rem;
   font-weight: 300;
