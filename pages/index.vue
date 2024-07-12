@@ -49,7 +49,7 @@ const copyPhone = () => {
 
 <template>
   <div class="relative content">
-    <header-component class="mb-6 sm:mb-24" />
+    <header-component class="mb-6 sm:mb-[5.5rem]" />
     <img src="public/images/background.svg" class="absolute object-none top-0 sm:hidden" />
 
     <section class="px-4 sm:px-0 mb-16 sm:mb-28 flex flex-col">
