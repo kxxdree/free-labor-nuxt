@@ -2,24 +2,12 @@
 export default defineNuxtConfig({
   ssr: true,
   css: [`~/assets/style/main.scss`],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "~/assets/style/variables.scss" as *; @import "~/assets/style/variables.scss";',
-        },
-      },
-    },
-  },
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-
-  modules: [],
-
   app: {
     head: {
       title: "АНО «Цифровой регион. Липецк»",
