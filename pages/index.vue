@@ -229,7 +229,8 @@ const copyEmail = () => {
 
 .mission-logo {
   @media (max-width: 480px) {
-    height: 20rem;
+    object-fit: cover;
+    max-height: 24rem;
   }
 }
 
