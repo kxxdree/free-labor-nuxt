@@ -40,6 +40,7 @@
                 <img src="public/images/pdf.svg" alt="Doc" class="doc-img" />
               </td>
               <td>
+
                 <img src="public/images/zip.svg" alt="Doc" class="doc-img" />
               </td>
             </tr>

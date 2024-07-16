@@ -10,12 +10,12 @@ watch(mobileMenuIsOpen, (value) => {
       <img src="public/images/header-logo.svg" alt="Logo" class="w-10"/>
     </nuxt-link>
     <nav class="hidden sm:flex gap-10 no-underline text-[#191135] text-base font-light leading-[1.5]">
-      <a href="/#mission" class="link">О нас</a>
-      <a href="/#vacancies" class="link">Вакансии</a>
+      <nuxt-link href="/#mission" class="link">О нас</nuxt-link>
+      <nuxt-link href="/#vacancies" class="link">Вакансии</nuxt-link>
       <nuxt-link to="purchases" class="link">Закупки</nuxt-link>
-      <a href="/#contacts" class="link">Контакты</a>
+      <nuxt-link href="/#contacts" class="link">Контакты</nuxt-link>
     </nav>
-    <button @click="mobileMenuIsOpen = true" class="z-10">
+    <button @click="mobileMenuIsOpen = true" class="z-10 sm:hidden">
       <img src="/public/images/menu-burger.svg" alt="menu" class="sm:hidden"/>
     </button>
   </header>
@@ -37,10 +37,10 @@ watch(mobileMenuIsOpen, (value) => {
       </div>
       <div>
         <nav class="py-6 flex flex-col *:px-4 *:py-3.5 *:text-lg">
-          <a href="/#mission" @click="mobileMenuIsOpen = false" class="link">О нас</a>
-          <a href="/#vacancies" @click="mobileMenuIsOpen = false" class="link">Вакансии</a>
+          <nuxt-link href="/#mission" @click="mobileMenuIsOpen = false" class="link">О нас</nuxt-link>
+          <nuxt-link href="/#vacancies" @click="mobileMenuIsOpen = false" class="link">Вакансии</nuxt-link>
           <nuxt-link to="purchases" @click="mobileMenuIsOpen = false" class="link">Закупки</nuxt-link>
-          <a href="/#contacts" @click="mobileMenuIsOpen = false" class="link">Контакты</a>
+          <nuxt-link href="/#contacts" @click="mobileMenuIsOpen = false" class="link">Контакты</nuxt-link>
         </nav>
       </div>
     </div>

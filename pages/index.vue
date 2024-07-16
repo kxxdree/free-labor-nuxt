@@ -26,7 +26,7 @@ const vacancies = [
     vacancyRequirements: ["Опыт работы от 3х лет", "Глубокое понимание Python, FastAPI и PostgreSQL", "Опыт работы с Docker"],
   },
 ];
-
+const address = ref("г. Липецк, ул. Советская, 4")
 const emailAddress = ref("dr_lipetsk@admlr.lipetsk.ru");
 const phoneNumber = ref("+7 (900) 600 10 42");
 
@@ -38,13 +38,21 @@ const copyEmail = () => {
   }, 3000);
 };
 
-// const copyPhone = () => {
-//   navigator.clipboard.writeText(phoneNumber.value);
-//   phoneNumber.value = "Скопировано";
-//   setTimeout(() => {
-//     phoneNumber.value = "+7 (900) 600 10 42";
-//   }, 3000);
-// };
+const copyPhone = () => {
+  navigator.clipboard.writeText(phoneNumber.value);
+  phoneNumber.value = "Скопировано";
+  setTimeout(() => {
+    phoneNumber.value = "+7 (900) 600 10 42";
+  }, 3000);
+};
+
+const copyAddress = () => {
+  navigator.clipboard.writeText(address.value);
+  address.value = "Скопировано";
+  setTimeout(() => {
+    address.value = "г. Липецк, ул. Советская, 4";
+  }, 3000);
+};
 </script>
 
 <template>
@@ -157,7 +165,7 @@ const copyEmail = () => {
           <li class="flex flex-col sm:w-[24rem]">
             <img class="w-10 sm:w-16 mb-4 sm:mb-8" src="public/images/meeting-logo.svg" alt="Meet" />
             <h3 class="font-normal text-[1.625rem] leading-[1.2] sm:mb-2">Готовы встретиться</h3>
-            <p class="font-light text-xl leading-[1.5] text-[#5f42c3]">г. Липецк, ул. Советская, 4</p>
+            <p class="font-light text-xl leading-[1.5] text-[#5f42c3] cursor-pointer" @click="copyAddress">{{ address }}</p>
           </li>
           <li class="flex flex-col sm:w-[24rem]">
             <img class="w-10 sm:w-16 mb-4 sm:mb-8" src="public/images/mail-logo.svg" alt="Meet" />
@@ -167,7 +175,7 @@ const copyEmail = () => {
           <li class="flex flex-col sm:w-[24rem]">
             <img class="w-10 sm:w-16 mb-4 sm:mb-8" src="public/images/call-logo.svg" alt="Meet" />
             <h3 class="font-normal text-[1.625rem] leading-[1.2] sm:mb-2">Ждём звонка</h3>
-            <p class="font-light text-xl leading-[1.5] text-[#5f42c3] cursor-pointer contacts-phone">{{ phoneNumber }}</p>
+            <p class="font-light text-xl leading-[1.5] text-[#5f42c3] cursor-pointer contacts-phone" @click="copyPhone">{{ phoneNumber }}</p>
           </li>
         </ul>
       </section>
