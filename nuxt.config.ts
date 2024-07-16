@@ -2,12 +2,14 @@
 export default defineNuxtConfig({
   ssr: true,
   css: [`~/assets/style/main.scss`],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   app: {
     head: {
       title: "АНО «Цифровой регион. Липецк»",
@@ -30,4 +32,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  compatibilityDate: "2024-07-16",
 });
