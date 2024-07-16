@@ -3,23 +3,23 @@
 <template>
   <div class="h-screen flex flex-col content">
     <header-component />
-    <main class="py-16 px-24" id="purchases">
-      <section class="flex flex-col gap-4 mb-8">
-        <p class="text-[#5f42c3] font-normal text-xl leading-[1.4]">Обновлено 10 июля 2024 года</p>
-        <h2 class="font-medium text-[4rem] leading-[1.25]">Информация о закупках</h2>
+    <main class="sm:py-16 sm:px-24" id="purchases">
+      <section class="flex flex-col gap-4 mb-8 px-6">
+        <p class="text-[#5f42c3] font-normal sm:text-xl leading-[1.4]">Обновлено 10 июля 2024 года</p>
+        <h2 class="font-medium sm:text-[4rem] leading-[1.25]">Информация о закупках</h2>
       </section>
-      <section>
+      <section class="max-w-screen overflow-x-auto px-6">
         <table class="border-spacing-0 w-full table-container">
           <thead class="bg-[#f3f0ff]">
             <tr>
-              <th class="text-start w-[18.75rem] rounded-l-2xl">Наименование закупки</th>
-              <th class="text-start w-[7.5rem]">Номер закупки</th>
-              <th class="text-start w-[7.5rem]">Дата начала подачи заявок</th>
-              <th class="text-start w-[7.5rem]">Дата окончания подачи заявок</th>
-              <th class="text-start w-[8.125rem]">Текущий статус</th>
-              <th class="text-start w-[11.25rem]">Начальная (максимальная) цена договора</th>
-              <th class="text-center w-[8.7rem]">Документация</th>
-              <th class="text-center w-[8.7rem] rounded-r-2xl">Извещения/Протоколы заседания комиссии</th>
+              <th class="text-start rounded-l-2xl">Наименование закупки</th>
+              <th class="text-start">Номер закупки</th>
+              <th class="text-start">Дата начала подачи заявок</th>
+              <th class="text-start">Дата окончания подачи заявок</th>
+              <th class="text-start">Текущий статус</th>
+              <th class="text-start">Начальная (максимальная) цена договора</th>
+              <th class="text-center">Документация</th>
+              <th class="text-center rounded-r-2xl">Извещения/Протоколы заседания комиссии</th>
             </tr>
           </thead>
           <tbody>
@@ -33,7 +33,7 @@
               <td>01.02.2024 09:30 (МСК)</td>
               <td>Завершено</td>
               <td>3 843 378, 00 руб</td>
-              <td class="documentation">
+              <td class="documentation grid grid-cols-2 gap-2">
                 <img src="public/images/pdf.svg" alt="Doc" class="doc-img" />
                 <img src="public/images/pdf.svg" alt="Doc" class="doc-img" />
                 <img src="public/images/pdf.svg" alt="Doc" class="doc-img" />
