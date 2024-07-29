@@ -1,13 +1,13 @@
 <script setup lang="ts">
-const mobileMenuIsOpen = ref(false)
+const mobileMenuIsOpen = ref(false);
 watch(mobileMenuIsOpen, (value) => {
-  value ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
-})
+  value ? (document.body.style.overflow = "hidden") : (document.body.style.overflow = "auto");
+});
 </script>
 <template>
   <header class="flex items-center justify-between py-[1.25rem] px-6 sm:px-24">
     <nuxt-link to="/">
-      <img src="public/images/header-logo.svg" alt="Logo" class="w-10"/>
+      <img src="public/images/header-logo.svg" alt="Logo" class="w-10" />
     </nuxt-link>
     <nav class="hidden sm:flex gap-10 no-underline text-[#191135] text-base font-light leading-[1.5]">
       <nuxt-link href="/#mission" class="link">О нас</nuxt-link>
@@ -16,22 +16,21 @@ watch(mobileMenuIsOpen, (value) => {
       <nuxt-link href="/#contacts" class="link">Контакты</nuxt-link>
     </nav>
     <button @click="mobileMenuIsOpen = true" class="z-10 sm:hidden">
-      <img src="/public/images/menu-burger.svg" alt="menu" class="sm:hidden"/>
+      <img src="/public/images/menu-burger.svg" alt="menu" class="sm:hidden" />
     </button>
   </header>
   <Transition name="fade">
-    <div v-if="mobileMenuIsOpen" class="sm:hidden absolute top-0 left-0 z-10 h-[100dvh] w-full bg-black opacity-35"></div>
+    <div v-if="mobileMenuIsOpen" class="sm:hidden absolute top-0 left-0 z-10 h-[100dvh] w-full bg-black opacity-35" @click="mobileMenuIsOpen = false"></div>
   </Transition>
   <Transition name="slide-up">
     <div v-if="mobileMenuIsOpen" class="sm:hidden absolute z-20 top-0 left-0 bg-white w-full h-[356px] opacity-100">
       <div class="flex items-center justify-between py-[1.25rem] px-6 sm:px-24 border-b">
-        <nuxt-link to="/">
-          <img src="public/images/header-logo.svg" alt="Logo" class="w-10"/>
-        </nuxt-link>
+        <!-- <nuxt-link to="/"> -->
+        <img src="public/images/header-logo.svg" alt="Logo" class="w-10" />
+        <!-- </nuxt-link> -->
         <button @click="mobileMenuIsOpen = false">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M18 6L6 18M6 6L18 18" stroke="#191135" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round"/>
+            <path d="M18 6L6 18M6 6L18 18" stroke="#191135" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
       </div>
